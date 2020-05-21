@@ -1,13 +1,12 @@
 $(function () {
-    $(".orderBurger-form").on("submit", function (event) {
-        // Make sure to preventDefault on a submit event.
+    $(".orderBurger").on("submit", function (event) {
         event.preventDefault();
 
-        let newBurger = {
+        var newBurger = {
             name: $("#burger").val().trim()
         };
 
-        // Send the POST request.
+        // Adding new burger
         $.ajax("/api/burgers", {
             type: "POST",
             data: newBurger
@@ -18,6 +17,7 @@ $(function () {
         );
     });
 
+    // Changes boolean value
     $(".devourBtn").click(function (event) {
         var id = $(this).data("burgerid");
 
@@ -34,6 +34,8 @@ $(function () {
         );
     });
 
+
+    // Deletes burger from db
     $("#clear").click(function (event) {
         $.ajax("/api/clearburgers", {
             type: "DELETE"

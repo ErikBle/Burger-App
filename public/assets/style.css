@@ -1,19 +1,18 @@
+body {
+    background-color: #d2cfee
+}
+
 #submitBtn {
     margin-top: 20px;
 }
 
-#listDiv{
-    padding: 0px 30px;
-    border: 2px orange dashed;
-}
-
 li {
-    font-size: 18px;
-    color:#e65100;
+    font-size: 24px;
     padding: 5px;
 }
 
 .devourBtn{
     margin-left: 15px;
-    background-color: #ff6f00;
+    background-color: #9886cf
 }
+

@@ -3,14 +3,14 @@
 </div>
 
 <div class="row center-align">
-    <form class="col s12 orderBurger-form">
+    <form class="col s12 orderBurger">
         <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s5">
                 <input id="burger" type="text"></input>
-                <label for="burger">Burger Name</label>
+                <label for="burger">Enter burger name</label>
             </div>
-            <button class="waves-effect waves-orange btn orange darken-4" type="submit" name="action" id="submitBtn">
-                Submit</button>
+            <button class="btn-floating btn-large waves-effect waves-light red" type="submit" name="action" id="submitBtn">
+                Add</button>
         </div>
     </form>
 </div>
@@ -18,7 +18,9 @@
 <div class="row center-align">
     <div class="col s12 m6">
         <div class="row center-align">
-            <h4>Ordered Burgers</h4>
+            <h4>Ordered Burgers
+                 <i class="material-icons">mood</i>
+            </h4>
         </div>
         <div class="row">
             <ol id="orderlist">
@@ -29,7 +31,7 @@
 
                     <button class="devourBtn"
                         data-burgerid="{{id}}">
-                        Eat it
+                        Chew chew chew
                     </button>
                 </li>
                 {{/unless}}
@@ -41,9 +43,9 @@
 
     <div class="col s12 m6">
         <div class="row center-align">
-            <h4>Burgers in your stomach</h4>
-            <a class="waves-effect waves-red btn red accent-4" id="clear">clear
-                all</a>
+            <h4>Burgers in your stomach
+             <i class="material-icons">sentiment_neutral</i>
+            </h4>
         </div>
         <div class="row">
             <ol id="devouredlist">
@@ -56,5 +58,6 @@
                 {{/each}}
             </ol>
         </div>
+        <a class="waves-effect waves-light btn-large" id="clear">Clear your stomach</a>
     </div>
 </div>
