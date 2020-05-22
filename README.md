@@ -16,3 +16,6 @@ Press the "Clear stomach" button to delete the burger.
 
 ## Demo Screenshots:
 <img src="/demo/1.jpg">
+
+## Deployed Link:
+https://eat-burger-2888.herokuapp.com/
